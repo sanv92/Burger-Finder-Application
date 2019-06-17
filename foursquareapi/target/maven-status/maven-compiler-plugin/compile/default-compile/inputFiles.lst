@@ -1,0 +1,16 @@
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/BaseApi.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/VenuePhotoApi.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/FoursquareAutoConfiguration.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/photo/PhotosGroup.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/venue/Venue.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/venue/VenueGroup.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/photo/PhotoItems.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/venue/category/Category.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/venue/VenuesGroup.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/ResponseApi.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/venue/Location.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/FoursquareApi.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/FoursquareProperties.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/venue/category/Icon.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/VenueApi.java
+/Users/sander/Java/burger-finder-application/foursquareapi/src/main/java/com/example/foursquareapi/model/photo/Photo.java

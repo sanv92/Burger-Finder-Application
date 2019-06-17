@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>404</title>
+</head>
+<body>
+    <h3>404</h3>
+    <div th:if="${code}">
+        <p th:text="${code}"></p>
+    </div>
+    <div th:if="${status}">
+        <p th:text="${status}"></p>
+    </div>
+    <div th:if="${body}">
+        <p th:text="${body}"></p>
+    </div>
+    <div th:if="${message}">
+        <p th:text="${message}"></p>
+    </div>
+</body>
+</html>
