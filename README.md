@@ -10,10 +10,14 @@ git clone https://github.com/SanderV1992/Burger-Finder-Application.git
 ```
 
 ### Project build
+```
 mvn clean package
+```
 
 ### Run
+```
 cd ./application && mvn spring-boot:run
+```
 
 ---
 
