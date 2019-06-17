@@ -1,9 +1,9 @@
-package com.example.demo.venues;
+package com.example.demo.interfaces.venues;
 
 
 import com.example.demo.domain.model.BurgerPhoto;
 import com.example.demo.domain.model.CityType;
-import com.example.demo.venues.form.VenueFormType;
+import com.example.demo.interfaces.venues.form.VenueFormType;
 import com.example.foursquareapi.model.venue.Venue;
 import com.example.demo.ControllerIntegrationTest;
 import org.junit.jupiter.api.Test;

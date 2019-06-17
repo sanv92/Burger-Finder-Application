@@ -1,7 +1,0 @@
-com/example/burgerapi/BaseApi.class
-META-INF/spring-configuration-metadata.json
-com/example/burgerapi/BurgerApi$BurgerRequest.class
-com/example/burgerapi/BurgerApi.class
-com/example/burgerapi/BurgerProperties.class
-com/example/burgerapi/BurgerAutoConfiguration$BurgerApiConfiguration.class
-com/example/burgerapi/BurgerAutoConfiguration.class

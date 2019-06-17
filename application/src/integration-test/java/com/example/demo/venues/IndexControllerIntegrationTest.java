@@ -1,4 +1,4 @@
-package com.example.demo.venues;
+package com.example.demo.interfaces.venues;
 
 import com.example.demo.ControllerIntegrationTest;
 import org.junit.jupiter.api.Test;

@@ -1,6 +1,6 @@
 package com.example.demo.config;
 
-import com.example.demo.venues.dtos.converters.StringToEnumConverterFactory;
+import com.example.demo.interfaces.venues.dtos.converters.StringToEnumConverterFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
