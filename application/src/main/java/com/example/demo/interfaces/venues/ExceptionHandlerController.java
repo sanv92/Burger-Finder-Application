@@ -15,7 +15,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @ControllerAdvice
-public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
+public class ExceptionHandlerController extends ResponseEntityExceptionHandler {
     private static final Logger log = LogManager.getLogger();
 
     @ExceptionHandler(ResourceNotFoundException.class)
