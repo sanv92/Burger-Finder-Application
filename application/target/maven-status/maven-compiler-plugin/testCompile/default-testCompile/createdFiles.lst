@@ -1,0 +1,7 @@
+com/example/demo/service/PhotoServiceTest.class
+com/example/demo/interfaces/venues/IndexControllerIntegrationTest.class
+com/example/demo/interfaces/venues/VenueControllerIntegrationTest.class
+com/example/demo/application/VenuePhotoServiceTest.class
+com/example/demo/application/VenuePhotoAnalyzerServiceTest.class
+com/example/demo/application/VenueServiceTest.class
+com/example/demo/ControllerIntegrationTest.class

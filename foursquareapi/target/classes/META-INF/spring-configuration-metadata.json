@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "foursquare",
+      "type": "com.example.foursquareapi.FoursquareProperties",
+      "sourceType": "com.example.foursquareapi.FoursquareProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "foursquare.api-url",
+      "type": "java.lang.String",
+      "sourceType": "com.example.foursquareapi.FoursquareProperties"
+    },
+    {
+      "name": "foursquare.client-id",
+      "type": "java.lang.String",
+      "sourceType": "com.example.foursquareapi.FoursquareProperties"
+    },
+    {
+      "name": "foursquare.client-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.example.foursquareapi.FoursquareProperties"
+    },
+    {
+      "name": "foursquare.locale",
+      "type": "java.lang.String",
+      "sourceType": "com.example.foursquareapi.FoursquareProperties"
+    },
+    {
+      "name": "foursquare.version",
+      "type": "java.lang.String",
+      "sourceType": "com.example.foursquareapi.FoursquareProperties"
+    }
+  ],
+  "hints": []
+}

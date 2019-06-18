@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="fragments/layout"
+>
+<body>
+<div layout:fragment="content">
+
+    <h2 th:text="'Venues'">Venues</h2>
+
+    <form
+            th:action="@{/venues/city}"
+            th:object="${cityForm}"
+            method="post"
+            class="form-horizontal"
+            id="change-city-form"
+    >
+        <div class="row pb-3">
+            <div class="col-sm">
+
+                <div class="input-group">
+                    <select th:field="*{cityName}" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option
+                                th:each="city : ${cities}"
+                                th:value="${city}"
+                                th:text="${city.name}"
+                                th:selected="${cityForm.getCityName()}"
+                        >
+                            -
+                        </option>
+                    </select>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">Button</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="venue : ${venues}">
+            <td th:text="${venue.id}">-</td>
+            <td th:text="${venue.name}">-</td>
+            <td>
+                <a class="btn btn-primary" th:href="@{/venues/{id}/(id=${venue.id})}" role="button">
+                    Read
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
