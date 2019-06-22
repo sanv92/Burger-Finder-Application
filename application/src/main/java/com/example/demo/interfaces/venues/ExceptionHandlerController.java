@@ -1,9 +1,7 @@
 package com.example.demo.interfaces.venues;
 
-import com.example.demo.domain.model.handling.ViolationResponse;
 import com.example.demo.domain.model.handling.ResourceNotFoundException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.example.demo.domain.model.handling.ViolationResponse;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
@@ -16,7 +14,6 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @ControllerAdvice
 public class ExceptionHandlerController extends ResponseEntityExceptionHandler {
-    private static final Logger log = LogManager.getLogger();
 
     @ExceptionHandler(ResourceNotFoundException.class)
     public final ModelAndView handleEntityNotFound(ResourceNotFoundException ex) {
@@ -50,9 +47,9 @@ public class ExceptionHandlerController extends ResponseEntityExceptionHandler {
     }
 
     private ModelAndView buildMvcResponse(ResponseEntity<Object> objectResponseEntity, Exception ex) {
-        log.error(objectResponseEntity.getStatusCode());
-        log.error(ex.getMessage());
-        log.error(objectResponseEntity.getBody());
+        logger.error(objectResponseEntity.getStatusCode());
+        logger.error(ex.getMessage());
+        logger.error(objectResponseEntity.getBody());
 
         ModelAndView mav = new ModelAndView();
         mav.addObject("code", objectResponseEntity.getStatusCode());
