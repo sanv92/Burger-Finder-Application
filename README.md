@@ -16,7 +16,13 @@ mvn clean package
 
 ### Run
 ```
-cd ./application && mvn spring-boot:run
+mvn --projects application spring-boot:run
+mvn --projects application spring-boot:run -Drun.jvmArguments='-Dserver.port=8081'
+```
+
+### Run jar file
+```
+java -jar ./application/target/application-1.0.jar
 ```
 
 ---
