@@ -2,6 +2,7 @@ package com.example.burgerapi;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -34,6 +35,7 @@ public class BurgerAutoConfiguration {
         }
 
         @Bean
+        @ConditionalOnProperty("burger.api-url")
         public BurgerApi burgerApi() {
             return new BurgerApi(properties, restTemplate, objectMapper);
         }

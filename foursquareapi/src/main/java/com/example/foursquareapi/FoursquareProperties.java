@@ -7,15 +7,15 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 )
 public class FoursquareProperties {
 
-    private String apiUrl;
+    private String apiUrl = "https://api.foursquare.com/v2";
 
     /*
       This field will indicate which version of the Foursquare API you wish to
       call. If not specified it will use the last publish date of this library.
      */
-    private String version;
+    private String version = "20180323";
 
-    private String locale;
+    private String locale = "en";
 
     private String clientId;
 

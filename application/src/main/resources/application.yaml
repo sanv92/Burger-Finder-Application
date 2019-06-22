@@ -1,0 +1,15 @@
+server:
+  port: 8000
+  error:
+    include-stacktrace: always
+
+spring:
+  freemarker:
+    cache: false
+
+  application:
+    name: "burger-finder"
+
+  # i18n
+  messages:
+    basename: "messages/messages"
