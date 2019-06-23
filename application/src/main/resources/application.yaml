@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8081
   error:
     include-stacktrace: always
 
@@ -13,3 +13,8 @@ spring:
   # i18n
   messages:
     basename: "messages/messages"
+
+  h2:
+    console:
+      enabled: true
+      path: "/h2-console"
