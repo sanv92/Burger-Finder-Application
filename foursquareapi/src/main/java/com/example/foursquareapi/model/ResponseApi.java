@@ -9,6 +9,9 @@ public class ResponseApi {
 
     private String header;
 
+    public ResponseApi() {
+    }
+
     public ResponseApi(String response, Integer code, String header) {
         this.response = response;
         this.code = code;
@@ -25,5 +28,14 @@ public class ResponseApi {
 
     public String getHeader() {
         return header;
+    }
+
+    @Override
+    public String toString() {
+        return "ResponseApi{" +
+                "response='" + response + '\'' +
+                ", code=" + code +
+                ", header='" + header + '\'' +
+                '}';
     }
 }

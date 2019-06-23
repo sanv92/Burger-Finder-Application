@@ -1,17 +1,33 @@
 package com.example.foursquareapi.model.venue;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 import java.util.List;
 
-@Data
-@EqualsAndHashCode
-@ToString
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class VenuesGroup {
 
     private List<Venue> venues;
+
+    public VenuesGroup() {
+    }
+
+    public VenuesGroup(List<Venue> venues) {
+        this.venues = venues;
+    }
+
+    public List<Venue> getVenues() {
+        return venues;
+    }
+
+    public void setVenues(List<Venue> venues) {
+        this.venues = venues;
+    }
+
+    @Override
+    public String toString() {
+        return "VenuesGroup{" +
+                "venues=" + venues +
+                '}';
+    }
 }
