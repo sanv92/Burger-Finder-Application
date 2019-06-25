@@ -1,6 +1,5 @@
 package com.example.burgerapi;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestClientException;
@@ -15,8 +14,8 @@ public class BurgerApi extends BaseApi {
     public BurgerApi() {
     }
 
-    public BurgerApi(BurgerProperties properties, RestTemplate restTemplate, ObjectMapper objectMapper) {
-        super(properties, restTemplate, objectMapper);
+    public BurgerApi(BurgerProperties properties, RestTemplate restTemplate) {
+        super(properties, restTemplate);
     }
 
     public boolean analyzeIsBurger(String url) {
